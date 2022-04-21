@@ -6,9 +6,13 @@ import utils.color as uclr
 # Работа с цветом
 print(uclr.hex_to_rgb("#432123"))
 
-
 # Работа с пользователями
 print("Add user in system")
+
+
+def print_abc(arg):
+    print("abc")
+
 
 for i in range(15):
     login = get_new_user_name()
