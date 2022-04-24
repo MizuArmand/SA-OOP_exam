@@ -2,6 +2,7 @@ from server.models import add_user
 from utils.password import get_new_password, check_strong_password
 from utils.users import get_new_user_name
 import utils.color as uclr
+from utils.voice import dub
 
 # Работа с цветом
 print(uclr.hex_to_rgb("#432123"))
@@ -18,4 +19,4 @@ for i in range(15):
     if check_strong_password(pswd):
         add_user(login, pswd)
 
-
+dub('Поздравляю! Генерация учетных записей завершена!')
