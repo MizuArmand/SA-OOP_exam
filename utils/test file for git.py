@@ -1,15 +1,13 @@
-a = 2
-b = 3
-c = 4
+"""
+survey_date() - При обращении пользователя к какой-либо услуге формирует дату для опроса качеством сервиса по ней.
+"""
 
-d = min(a,b,c)
-s_square = float(d**2)
-p = (a + b + c) /2
-s_triangle = float((p*(p-a)*(p-b)*(p-c))**0.5)
+import datetime
 
-if s_square > s_triangle:
-    print("Площадь квадрата больше площади треугольника.")
-elif s_square < s_triangle:
-    print("Площадь треугольника больше площади квадрата.")
-else:
-    print("Фигуры равны по площади")
+def survey_date():
+    now = datetime.date.today()
+    survey_d = now + datetime.timedelta(days=5)
+    return (survey_d)  # дата для записи в базу данных
+
+survey_date()
+
